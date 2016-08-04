@@ -2,7 +2,7 @@ var React = require('react');
 var PropTypes = React.PropTypes;
 var utils = require('../helpers/utils');
 var getDate = utils.getDate;
-var DayItem = require('./DayItem');
+import DayItem from './DayItem'
 
 var styles = {
   container: {

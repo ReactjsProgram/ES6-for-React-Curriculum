@@ -1,6 +1,6 @@
 var React = require('react');
 var utils = require('../helpers/utils');
-var DayItem = require('./DayItem');
+import DayItem from './DayItem'
 var convertTemp = utils.convertTemp;
 
 var styles = {

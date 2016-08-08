@@ -5,7 +5,7 @@ import HomeContainer from '../containers/HomeContainer'
 import ForecastContainer from '../containers/ForecastContainer'
 import DetailContainer from '../containers/DetailContainer'
 
-var routes = (
+const routes = (
   <Router history={hashHistory}>
     <Route path='/' component={Main}>
       <IndexRoute component={HomeContainer} />

@@ -1,4 +1,4 @@
-var daysMap = {
+const daysMap = {
   "0":"Sunday",
   "1":"Monday",
   "2":"Tuesday",
@@ -8,7 +8,7 @@ var daysMap = {
   "6":"Saturday"
 };
 
-var monthsMap = {
+const monthsMap = {
   "0":"Jan",
   "1":"Feb",
   "2":"Mar",
@@ -28,8 +28,8 @@ export function convertTemp (kelvin) {
 }
 
 export function getDate (unixTimestmap) {
-  var date = new Date(unixTimestmap * 1000);
-  var day = daysMap[date.getDay()]
-  var month = monthsMap[date.getMonth()] + ' ' + date.getDate();
+  const date = new Date(unixTimestmap * 1000);
+  const day = daysMap[date.getDay()]
+  const month = monthsMap[date.getMonth()] + ' ' + date.getDate();
   return day + ', ' + month;
 }

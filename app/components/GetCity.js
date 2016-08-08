@@ -1,5 +1,4 @@
-var React = require('react');
-var PropTypes = React.PropTypes;
+import React, { PropTypes } from 'react'
 
 function Button (props) {
   return (
@@ -55,4 +54,4 @@ GetCity.propTypes = {
   city: PropTypes.string.isRequired
 }
 
-module.exports = GetCity;
+export default GetCity;

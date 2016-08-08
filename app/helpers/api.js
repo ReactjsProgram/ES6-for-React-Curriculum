@@ -1,4 +1,4 @@
-var axios = require('axios');
+import axios from 'axios'
 
 var _baseURL = 'http://api.openweathermap.org/data/2.5/';
 var _APIKEY = 'b714ec74bbab5650795063cb0fdf5fbe';
@@ -23,7 +23,7 @@ function getQueryStringData (city) {
   }
 }
 
-function getCurrentWeather (city) {
+export function getCurrentWeather (city) {
   var queryStringData = getQueryStringData(city);
   var url = prepUrl('weather', queryStringData)
 
@@ -33,7 +33,7 @@ function getCurrentWeather (city) {
     })
 }
 
-function getForcast (city) {
+export function getForcast (city) {
   var queryStringData = getQueryStringData(city);
   var url = prepUrl('forecast/daily', queryStringData)
 
@@ -43,7 +43,3 @@ function getForcast (city) {
     })
 }
 
-module.exports = {
-  getCurrentWeather: getCurrentWeather,
-  getForcast: getForcast
-};

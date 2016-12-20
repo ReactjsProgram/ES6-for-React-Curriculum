@@ -1,8 +1,7 @@
-var React = require('react');
-var PropTypes = React.PropTypes;
-var GetCityContainer = require('../containers/GetCityContainer');
+import React, { PropTypes } from 'react'
+import GetCityContainer from '../containers/GetCityContainer'
 
-var styles = {
+const styles = {
   container: {
     backgroundSize: 'cover',
     backgroundImage: "url('app/images/pattern.svg')",
@@ -29,4 +28,4 @@ function Home (props) {
   )
 }
 
-module.exports = Home;
+export default Home;
